@@ -19,6 +19,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -31,46 +35,123 @@
 
         <nav>
             <a href="index.html">INICIO</a>
-            <a href="pages/acerca">ACERCA</a>
-            <a href="pages/conciertos">CONCIERTOS</a>
-            <a href="pages/artistas">ARTISTAS</a>
-            <a href="pages/contacto">CONTACTO</a>
+            <a href="pages/acerca.html">ACERCA</a>
+            <a href="pages/conciertos.html">CONCIERTOS</a>
+            <a href="pages/artistas.html">ARTISTAS</a>
+            <a href="pages/contacto.html">CONTACTO</a>
         </nav>
 
     </header>
 
 
-    <main>
-        
-            <div class="hero">
+    <main id="main-inicio">
 
-                <h1 class="description">Jam Radar te lleva a donde está la música.</span></h1>
-                <p class="parrafo">En un país tan diverso musicalmente como México, es esencial tener una plataforma que
-                    refleje la riqueza cultural de la música en vivo. Ya sea que te apasione el mariachi, el rock, el
-                    reggaetón o cualquier otro género, Jam Radar te conectará con los eventos y conciertos que más te
-                    interesan, todo en un solo lugar.</p>
+        <div class="background-image">
+            <img src="media/backhero.jpg" alt="Imagen de fondo">
+        </div>
 
-                <form>
-                    <button class="hero-button">DESCARGA LA APP</button>
-                </form>
+        <div class="hero">
 
-            </div>
+            <h1 class="description">Jam Radar te lleva a donde está la música.</span></h1>
+            <p class="parrafo">En un país tan diverso musicalmente como México, es esencial tener una plataforma que
+                refleje la riqueza cultural de la música en vivo. Ya sea que te apasione el mariachi, el rock, el
+                reggaetón o cualquier otro género, Jam Radar te conectará con los eventos y conciertos que más te
+                interesan, todo en un solo lugar.</p>
 
-            <div class="hero-image">
-                <img src="./media/HERO-IMAGE.png" alt="Aplicación Jam Radar">
-            </div>
+            <form>
+                <button class="hero-button">DESCARGA LA APP</button>
+            </form>
 
-        
+        </div>
+
+        <div class="hero-image">
+            <img src="./media/HERO-IMAGE.png" alt="Aplicación Jam Radar">
+        </div>
+
+
     </main>
 
+    <section>
+        <div class="tarjetas">
+            <img src="./media/BLINK182.jpg" alt="Blink 182">
+            <h2>Blink 182</h2>
+        </div>
 
 
-    
+        <div class="tarjetas">
+            <img src="./media/MANESKIN.jpg" alt="Maneskin">
+            <h2>Måneskin</h2>
+        </div>
 
+        <div class="tarjetas">
+            <img src="./media/PARAMORE.jpg" alt="Paramore">
+            <h2>Paramore</h2>
+        </div>
 
+        <div class="tarjetas">
+            <img src="./media/SLIPKNOT.jpg" alt="Slipknot">
+            <h2>Slipknot</h2>
+        </div>
 
-    
+        <div class="tarjetas">
+            <img src="./media/THE-STROKES.jpg" alt="The Strokes">
+            <h2>The Strokes</h2>
+        </div>
 
+        <div class="tarjetas">
+            <img src="./media/YEAHS.jpg" alt="Yeah Yeah Yeahs">
+            <h2>Yeah Yeah Yeahs</h2>
+        </div>
+
+    </section>
+
+    <section class="container-fluid">
+        <h2> RECINTOS</h2>
+        <div class="row">
+
+            <div class="col-xs-12 col-sm-4 col-md-5 col-lg-3 col-xl-5">
+                <p>
+                    Descubre la riqueza musical de México a través de sus destacados recintos. En el majestuoso Palacio
+                    de Bellas Artes, la música clásica y la ópera cobran vida en un entorno elegante. El Auditorio
+                    Nacional, con su imponente estructura, acoge a artistas internacionales, mientras que el Foro Sol
+                    vibra con la energía de multitudes en conciertos legendarios. Para experiencias más íntimas, El
+                    Plaza Condesa ofrece un ambiente acogedor, y el histórico Zócalo de la Ciudad de México se convierte
+                    en un escenario al aire libre donde la música se fusiona con la rica cultura del país. ¡Sumérgete en
+                    la diversidad musical de México a través de estos emblemáticos espacios!
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-7 col-lg-9 col-xl-7">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://musicaenmexico.com.mx/wp-content/uploads/2018/01/Auditorio-Nacional.jpg" class="img-propia d-block w-100"
+                                alt="Auditorio Nacional">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.eluniversal.com.mx/resizer/k9W_EtTM1yozWiMe2jLg_odJoP0=/1100x666/cloudfront-us-east-1.images.arcpublishing.com/eluniversal/LWRYYDPPANHQVCNZ3DANK6XKVY.jpg" class="img-propia d-block w-100"
+                                alt="Foro Sol">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://ntsedomex.com.mx/wp-content/uploads/2023/05/mapa-palacio-de-los-deportes-como-esta-dividido.jpg"
+                                class="img-propia d-block w-100" alt="Palacio de los Deportes">
+                        </div>
+                    </div>
+                    
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <footer class="pie-pagina">
         <div class="grupo-1">
@@ -99,6 +180,14 @@
         </div>
     </footer>
 
+
+    <!-- Script de funcionalidades de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
