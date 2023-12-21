@@ -29,35 +29,107 @@ body {
   margin: 0;
 }
 
-.header {
-  background-color: var(--secundary);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 70px;
-  padding: 5px;
+/* Header */
+
+nav{
+  background: #A00C30;
+  height: 80px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-header nav {
-  text-align: right;
-  padding: 20px;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.enlace{
+  position: absolute;
+  padding: 20px 50px;
 }
 
-header nav a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 18px;
+.logo{
+  height: 40px;
+}
+
+nav ul{
+  float: right;
   margin-right: 30px;
 }
 
-.header .logo img {
-  height: 50px;
-  width: auto;
+nav ul li{
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+  text-decoration: none;
 }
 
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li a.active, li a:hover{
+  background: #121514;
+  transition: .5s;
+}
+
+#check{
+  display: none;
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  
+  display: none;
+}
+
+@media (max-width: 930px){
+  .enlace{
+      padding-left: 20px;
+  }
+  nav ul li a{
+      font-size: 16px;
+  }
+}
+
+
+@media (max-width: 857px){
+  .checkbtn{
+      display: block;
+  }
+  ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #090909;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 2;
+  }
+  nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+  }
+  nav ul li a{
+      font-size: 20px;
+  }
+  li a:hover, li a.active{
+      background: none;
+      color: red;
+  }
+  #check:checked ~ ul{
+      left:0;
+  }
+}
 /* Hero */
 #main-inicio {
   padding-top: 0;
@@ -70,6 +142,7 @@ header nav a {
 .hero {
   position: relative;
   z-index: 1;
+  
 }
 
 .hero-image img {
@@ -110,6 +183,7 @@ main p {
 main form {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 main form button {
@@ -138,7 +212,7 @@ main img {
 }
 
 /* Media Query */
-@media (max-width: 991px) {
+@media (max-width: 930px) {
   main p {
     margin-right: 2rem;
     margin-left: 2rem;
@@ -150,7 +224,7 @@ main img {
     width: 100%;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 857px) {
   main {
     height: auto;
   }
@@ -181,6 +255,38 @@ main img {
     text-align: center;
   }
 }
+@media (max-width: 767px) {
+  #main-inicio {
+    flex-direction: column-reverse;
+    align-items: center; 
+  }
+}
+
+@media (max-width: 767px) {
+  .description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 1rem 0; 
+  }
+}
+@media (max-width: 767px) {
+  .hero h1 {
+      font-size: 2em;
+  }
+
+  .hero p {
+      font-size: 1.2em;
+      margin: 0 1rem; 
+  }
+
+  .hero-button {
+      width: 100%;
+  }
+}
+
+
+
+
 /* Seccion 1 Inicio */
 section {
   display: flex;
@@ -503,5 +609,7 @@ img {
 .pie-pagina .grupo-1 {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
+
 
 /*# sourceMappingURL=style.css.map */
